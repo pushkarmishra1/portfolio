@@ -1,3 +1,4 @@
+
 # 🌐 Pushkar Mishra — Portfolio Website
 
 > A dark-themed, animated personal portfolio built with pure **HTML5, CSS3, and Vanilla JavaScript** — no frameworks, no build tools, zero dependencies.
@@ -128,3 +129,7 @@ MIT — Free to use and modify for personal portfolios.
 ---
 
 *Built by Pushkar Mishra — Lucknow, UP*
+=======
+# portfolio
+Personal Portfolio | Full Stack Developer | HTML CSS JS
+4a559538d9431c281ab7dc1d574d9622c9edfc04
