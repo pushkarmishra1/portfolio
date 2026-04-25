@@ -42,15 +42,11 @@
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
 
-    try {
-      await fetch('https://formspree.io/f/xojybjkl', {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ name, email, message })
-});
+   window.location.href =
+  `mailto:pushkarmishra1220@gmail.com?subject=Portfolio%20Message&body=
+  Name: ${name}%0D%0A
+  Email: ${email}%0D%0A
+  Message: ${message}`;
       onSuccess();
     } catch (err) {
       onError();
