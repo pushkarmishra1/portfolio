@@ -43,7 +43,14 @@
     submitBtn.textContent = 'Sending...';
 
     try {
-      await simulateSend({ name, email, message }); // ← swap this with real fetch()
+      await fetch('https://formspree.io/f/xojybjkl', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ name, email, message })
+});
       onSuccess();
     } catch (err) {
       onError();
@@ -52,11 +59,6 @@
 
   function isValidEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  function simulateSend(data) {
-    /* Simulates a 1.2s network call. Replace with real fetch. */
-    return new Promise((resolve) => setTimeout(resolve, 1200));
   }
 
   function onSuccess() {
