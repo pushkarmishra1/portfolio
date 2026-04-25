@@ -1,0 +1,49 @@
+/* ─────────────────────────────────────────
+   variables.css  — Design tokens (single source of truth)
+   Change colors, fonts, spacing here only.
+───────────────────────────────────────── */
+:root {
+  /* Colors */
+  --color-bg:         #050508;
+  --color-bg-alt:     #08080f;
+  --color-card:       rgba(15, 10, 30, 0.7);
+  --color-magenta:    #d63aff;
+  --color-purple:     #7b2fff;
+  --color-pink:       #ff2d78;
+  --color-cyan:       #00f0ff;
+  --color-text:       #e8e0f5;
+  --color-muted:      #8a7fa0;
+  --color-border:     rgba(214, 58, 255, 0.15);
+
+  /* Gradients */
+  --grad-primary:  linear-gradient(135deg, var(--color-magenta), var(--color-purple));
+  --grad-shimmer:  linear-gradient(135deg, var(--color-magenta), var(--color-purple), var(--color-cyan));
+
+  /* Shadows / Glows */
+  --glow-sm:   0 0 15px rgba(214, 58, 255, 0.3);
+  --glow-md:   0 0 30px rgba(214, 58, 255, 0.4);
+  --glow-lg:   0 0 60px rgba(214, 58, 255, 0.2);
+
+  /* Typography */
+  --font-display: 'Orbitron', monospace;
+  --font-body:    'Syne', sans-serif;
+
+  /* Spacing scale */
+  --space-xs:  8px;
+  --space-sm:  16px;
+  --space-md:  24px;
+  --space-lg:  40px;
+  --space-xl:  80px;
+  --space-2xl: 120px;
+
+  /* Border radius */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-pill: 999px;
+
+  /* Transitions */
+  --transition-fast:   0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow:   0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
